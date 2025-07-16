@@ -1,49 +1,18 @@
-/**
- * TABLE OF CONTENT
- *
- * COMPONENTS
- * Btn............................Buttons style
- * Slider.........................Slider style
- * Card...........................Cards style
- *
- * MAIN CONTENT
- * Header.........................Modify header style
- * Hero...........................Hero styles
- * Client.........................Client style
- * About..........................About style
- * Skills.........................Skills style
- * Cta............................Cta style
- * Testimonials...................Testimonials style
- * Media queries..................Responsive for all devices
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #COMPONENTS
-\*-----------------------------------*/
-
 @import url("./components/btn.css");
 @import url("./components/slider.css");
 @import url("./components/card.css");
-
-
-
-
 
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
 
-.header { background-color: transparent; }
+.header {
+  background-color: transparent;
+}
 
-.header.active { background-color: var(--white); }
-
-
-
-
+.header.active {
+  background-color: var(--white);
+}
 
 /*-----------------------------------*\
   #HERO
@@ -83,18 +52,18 @@
   margin-block-end: 20px;
 }
 
-.hero-text { margin-block: 25px; }
+.hero-text {
+  margin-block: 25px;
+}
 
-.hero .btn { margin-inline: auto; }
+.hero .btn {
+  margin-inline: auto;
+}
 
 .hero-banner {
   max-width: max-content;
   margin-inline: auto;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #CLIENT
@@ -105,13 +74,13 @@
   padding-block: 30px;
 }
 
-.client .slider-item { min-width: calc(50% - 15px); }
+.client .slider-item {
+  min-width: calc(50% - 15px);
+}
 
-.client .slider::-webkit-scrollbar { display: none; }
-
-
-
-
+.client .slider::-webkit-scrollbar {
+  display: none;
+}
 
 /*-----------------------------------*\
   #ABOUT
@@ -122,7 +91,9 @@
   gap: 50px;
 }
 
-.about .section-text { margin-block: 25px 16px; }
+.about .section-text {
+  margin-block: 25px 16px;
+}
 
 .about-list {
   display: flex;
@@ -148,16 +119,17 @@
   gap: 15px 25px;
 }
 
-
-
-
-
 /*-----------------------------------*\
   #SKILLS
 \*-----------------------------------*/
 
-.skill { padding-block-start: 0px; padding-block-end: 50px;}
-.section-title{text-align: center;}
+.skill {
+  padding-block-start: 0px;
+  padding-block-end: 50px;
+}
+.section-title {
+  text-align: center;
+}
 
 .skill-list {
   display: grid;
@@ -165,14 +137,15 @@
   gap: 20px;
 }
 
-.skill .card ion-icon { font-size: 3rem; }
+.skill .card ion-icon {
+  font-size: 3rem;
+}
 
 .skill .card .card-title {
   color: var(--jet);
   font-size: 1.6rem;
   font-weight: var(--fw-500);
 }
-
 
 /*-----------------------------------*\
   #CTA
@@ -196,10 +169,6 @@
   color: var(--white);
   font-weight: var(--fw-500);
 }
-
-
-
-
 
 /*-----------------------------------*\
   #TESTIMONIALS
@@ -228,7 +197,9 @@
   font-weight: var(--fw-600);
 }
 
-.testi .client-title { font-size: var(--fs-14); }
+.testi .client-title {
+  font-size: var(--fs-14);
+}
 
 .testi .slider {
   margin-inline: -16px;
@@ -236,7 +207,9 @@
   padding-block-end: 35px;
 }
 
-.testi .slider::-webkit-scrollbar { height: 12px; }
+.testi .slider::-webkit-scrollbar {
+  height: 12px;
+}
 
 .testi .slider::-webkit-scrollbar-track {
   border: 1px solid var(--jet);
@@ -248,11 +221,9 @@
   border-radius: var(--radius-pill);
 }
 
-.testi .slider::-webkit-scrollbar-button { width: calc(25% - 20px); }
-
-
-
-
+.testi .slider::-webkit-scrollbar-button {
+  width: calc(25% - 20px);
+}
 
 /*-----------------------------------*\
   #MEDIA QUERIES
@@ -263,12 +234,13 @@
  */
 
 @media (min-width: 575px) {
-
   /**
    * CLIENT, ABOUT & SKILL
    */
 
-  .client .slider-item { min-width: calc(33.33% - 20px); }
+  .client .slider-item {
+    min-width: calc(33.33% - 20px);
+  }
 
   .client .slider-item .w-100,
   .about-banner,
@@ -279,25 +251,23 @@
    * CTA
    */
 
-  .cta .container { justify-content: space-between; }
-
+  .cta .container {
+    justify-content: space-between;
+  }
 }
-
-
-
-
 
 /**
  * responsive for large than 768px screen
  */
 
 @media (min-width: 768px) {
-
   /**
    * HERO
    */
 
-  .hero-text { --fs-18: 2rem; }
+  .hero-text {
+    --fs-18: 2rem;
+  }
 
   .hero::after {
     top: -20%;
@@ -306,34 +276,28 @@
     right: -15%;
   }
 
-
-
   /**
    * CLIENT
    */
 
-  .client .slider-item { min-width: calc(25% - 22.5px); }
-
-
+  .client .slider-item {
+    min-width: calc(25% - 22.5px);
+  }
 
   /**
    * TESTIMONIALS
    */
 
-  .testi .slider-item { min-width: calc(50% - 15px); }
-
+  .testi .slider-item {
+    min-width: calc(50% - 15px);
+  }
 }
-
-
-
-
 
 /**
  * responsive for large than 992px screen
  */
 
 @media (min-width: 992px) {
-
   /**
    * HERO, ABOUT, SKILL
    */
@@ -343,48 +307,45 @@
     align-items: center;
   }
 
-
-
   /**
    * HERO
    */
 
-  .hero { text-align: left; }
+  .hero {
+    text-align: left;
+  }
 
-  .hero .btn { margin-inline: 0; }
-
-
+  .hero .btn {
+    margin-inline: 0;
+  }
 
   /**
    * CLIENT
    */
 
-  .client .slider-item { min-width: calc(20% - 24px); }
-
-
+  .client .slider-item {
+    min-width: calc(20% - 24px);
+  }
 
   /**
    * SKILL
    */
 
-  .skill .container { align-items: flex-start; }
-
+  .skill .container {
+    align-items: flex-start;
+  }
 }
-
-
-
-
 
 /**
  * responsive for large than 1200px screen
  */
 
 @media (min-width: 1200px) {
-
   /**
    * ABOUT
    */
 
-  .about-list { gap: 40px; }
-
+  .about-list {
+    gap: 40px;
+  }
 }

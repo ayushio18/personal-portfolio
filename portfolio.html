@@ -1,321 +1,538 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- 
+    <!-- 
     - primary meta tags
   -->
-  <title>Ayush's | Projects</title>
-  <meta name="title" content="Ayush's | Portfolio">
+    <title>Ayush's | Projects</title>
+    <meta name="title" content="Ayush's | Portfolio" />
 
-  <!-- 
+    <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
-  <!-- 
+    <!-- 
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- 
+    <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/require.css">
-  <link rel="stylesheet" href="./assets/css/pages/portfolio.css">
+    <link rel="stylesheet" href="./assets/css/require.css" />
+    <link rel="stylesheet" href="./assets/css/pages/portfolio.css" />
+  </head>
 
-</head>
-
-<body>
-
-  <!-- 
+  <body>
+    <!-- 
     - #PRELOADER
   -->
 
-  <div class="preloader" data-preloader>
-    <div class="preloader-circle"></div>
-  </div>
+    <div class="preloader" data-preloader>
+      <div class="preloader-circle"></div>
+    </div>
 
-
-
-
-
-  <!-- 
+    <!-- 
     - #HEADER
   -->
 
-  <header class="header" data-header>
-    <div class="container">
+    <header class="header" data-header>
+      <div class="container">
+        <a href="./index.html" class="logo">
+          <img
+            src="./assets/images/Logo.png"
+            width="250"
+            height="28"
+            alt="Ayush's home"
+          />
+        </a>
 
-      <a href="./index.html" class="logo">
-        <img src="./assets/images/Logo.png" width="250" height="28" alt="Ayush's home">
-      </a>
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="./index.html" class="label-lg navbar-link has-after"
+                >Home</a
+              >
+            </li>
 
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <a href="./index.html" class="label-lg navbar-link has-after">Home</a>
-          </li>
-
-          <!-- <li class="navbar-item">
+            <!-- <li class="navbar-item">
             <a href="./service.html" class="label-lg navbar-link has-after">Services</a>
           </li> -->
 
-          <li class="navbar-item">
-            <a href="#" class="label-lg navbar-link has-after active">Projects</a>
-          </li>
+            <li class="navbar-item">
+              <a href="#" class="label-lg navbar-link has-after active"
+                >Projects</a
+              >
+            </li>
 
-          <li class="navbar-item">
-            <a href="./contact.html" class="label-lg navbar-link has-after">Contact</a>
-          </li>
+            <li class="navbar-item">
+              <a href="./contact.html" class="label-lg navbar-link has-after"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
 
-        </ul>
-      </nav>
+        <a href="./contact.html" class="btn btn-primary">Contact Now</a>
 
-      <a href="./contact.html" class="btn btn-primary">Contact Now</a>
+        <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+    </header>
 
-      <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-      </button>
-
-    </div>
-  </header>
-
-
-
-
-
-  <main>
-    <article>
-
-      <!-- 
+    <main>
+      <article>
+        <!-- 
         - #PORTFOLIO
       -->
 
-      <section class="section portfolio" aria-labelledby="portfolio-label">
-        <div class="container">
+        <section class="section portfolio" aria-labelledby="portfolio-label">
+          <div class="container">
+            <h2
+              class="section-title headline-md text-center"
+              id="portfolio-label"
+            >
+              Latest Projects
+            </h2>
 
-          <h2 class="section-title headline-md text-center" id="portfolio-label">Latest Projects</h2>
+            <ul class="portfolio-list">
+              <li>
+                <div
+                  class="portfolio-card"
+                  style="
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    margin-bottom: 2rem;
+                  "
+                >
+                  <div
+                    class="card-banner img-holder"
+                    style="
+                      width: 100%;
+                      height: 300px;
+                      overflow: hidden;
+                      position: relative;
+                    "
+                  >
+                    <img
+                      src="./assets/images/portfolio-5.jpg"
+                      width="800"
+                      height="540"
+                      loading="lazy"
+                      alt="Website Design for Marketing Agency Startup"
+                      class="img-cover"
+                    />
 
-          <ul class="portfolio-list">
+                    <a
+                      href="https://home-away-eight.vercel.app/"
+                      class="btn-icon"
+                      aria-label="More about Website Design for Marketing Agency Startup"
+                    >
+                      <ion-icon
+                        name="arrow-forward-sharp"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
 
-            <li>
-              <div class="portfolio-card">
+                  <div class="card-content">
+                    <span class="chip label-md">Web Development</span>
 
-                <div class="card-banner img-holder" style="--width: 800; --height: 540;">
-                  <img src="./assets/images/portfolio-1.jpg" width="800" height="540" loading="lazy"
-                    alt="Website Design for Marketing Agency Startup" class="img-cover">
+                    <h3 class="title-md">Home Away: Rental Booking</h3>
 
-                  <a href="https://github.com/ayushio18/Food-App" class="btn-icon"
-                    aria-label="More about Website Design for Marketing Agency Startup">
-                    <ion-icon name="arrow-forward-sharp" aria-hidden="true"></ion-icon>
-                  </a>
+                    <p class="card-text">
+                      Home Away is a full-stack web app that simplifies property
+                      rentals by allowing users to discover homes, list
+                      properties, and manage bookings with ease.
+                    </p>
+
+                    <a
+                      href="https://home-away-eight.vercel.app/"
+                      class="btn btn-primary"
+                      >View Project</a
+                    >
+                  </div>
                 </div>
+              </li>
 
-                <div class="card-content">
+              <li>
+                <div
+                  class="portfolio-card"
+                  style="
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    margin-bottom: 2rem;
+                  "
+                >
+                  <div
+                    class="card-banner img-holder"
+                    style="
+                      width: 100%;
+                      height: 300px;
+                      overflow: hidden;
+                      position: relative;
+                    "
+                  >
+                    <img
+                      src="./assets/images/portfolio-6.jpg"
+                      width="800"
+                      height="540"
+                      loading="lazy"
+                      alt="Website Design for Marketing Agency Startup"
+                      class="img-cover"
+                    />
 
-                  <span class="chip label-md">Web Development</span>
+                    <a
+                      href="https://sneaker-heaven-7b6e9.web.app/"
+                      class="btn-icon"
+                      aria-label="More about Website Design for Marketing Agency Startup"
+                    >
+                      <ion-icon
+                        name="arrow-forward-sharp"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
 
-                  <h3 class="title-md">Food Ordering App</h3>
+                  <div class="card-content">
+                    <span class="chip label-md">Web Development</span>
 
-                  <p class="card-text">
-                    A full-featured food ordering application developed using React.js, enabling users to browse menus,
-                    add items to the cart, and place orders seamlessly.
-                  </p>
+                    <h3 class="title-md">Online Sneaker Retail Store</h3>
 
-                  <a href="https://github.com/ayushio18/Food-App" class="btn btn-primary">View Project</a>
+                    <p class="card-text">
+                      Sneaker Heaven is a modern e-commerce web application
+                      designed for sneaker enthusiasts. Built with a sleek and
+                      responsive UI, the platform allows users to explore,
+                      search, and purchase a wide range of trendy and
+                      limited-edition sneakers.
+                    </p>
 
+                    <a
+                      href="https://sneaker-heaven-7b6e9.web.app/"
+                      class="btn btn-primary"
+                      >View Project</a
+                    >
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li>
+                <div
+                  class="portfolio-card"
+                  style="
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    margin-bottom: 2rem;
+                  "
+                >
+                  <div
+                    class="card-banner img-holder"
+                    style="
+                      width: 100%;
+                      height: 300px;
+                      overflow: hidden;
+                      position: relative;
+                    "
+                  >
+                    <img
+                      src="./assets/images/portfolio-1.jpg"
+                      width="800"
+                      height="540"
+                      loading="lazy"
+                      alt="Website Design for Marketing Agency Startup"
+                      class="img-cover"
+                    />
 
+                    <a
+                      href="https://github.com/ayushio18/Food-App"
+                      class="btn-icon"
+                      aria-label="More about Website Design for Marketing Agency Startup"
+                    >
+                      <ion-icon
+                        name="arrow-forward-sharp"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
 
+                  <div class="card-content">
+                    <span class="chip label-md">Web Development</span>
 
-            <li>
-              <div class="portfolio-card">
+                    <h3 class="title-md">Food Ordering App</h3>
 
-                <div class="card-banner img-holder" style="--width: 800; --height: 540;">
-                  <img src="./assets/images/portfolio-3.jpg" width="800" height="540" loading="lazy"
-                    alt="Website Design for Marketing Agency Startup" class="img-cover">
+                    <p class="card-text">
+                      A full-featured food ordering application developed using
+                      React.js, enabling users to browse menus, add items to the
+                      cart, and place orders seamlessly.
+                    </p>
 
-                  <a href="https://github.com/ayushio18/Bucket-List-App" class="btn-icon"
-                    aria-label="More about Website Design for Marketing Agency Startup">
-                    <ion-icon name="arrow-forward-sharp" aria-hidden="true"></ion-icon>
-                  </a>
+                    <a
+                      href="https://github.com/ayushio18/Food-App"
+                      class="btn btn-primary"
+                      >View Project</a
+                    >
+                  </div>
                 </div>
+              </li>
 
-                <div class="card-content">
+              <li>
+                <div
+                  class="portfolio-card"
+                  style="
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    margin-bottom: 2rem;
+                  "
+                >
+                  <div
+                    class="card-banner img-holder"
+                    style="
+                      width: 100%;
+                      height: 300px;
+                      overflow: hidden;
+                      position: relative;
+                    "
+                  >
+                    <img
+                      src="./assets/images/portfolio-3.jpg"
+                      width="800"
+                      height="540"
+                      loading="lazy"
+                      alt="Website Design for Marketing Agency Startup"
+                      class="img-cover"
+                    />
 
-                  <span class="chip label-md">Web Development</span>
+                    <a
+                      href="https://github.com/ayushio18/Bucket-List-App"
+                      class="btn-icon"
+                      aria-label="More about Website Design for Marketing Agency Startup"
+                    >
+                      <ion-icon
+                        name="arrow-forward-sharp"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
 
-                  <h3 class="title-md">Bucket List App</h3>
+                  <div class="card-content">
+                    <span class="chip label-md">Web Development</span>
 
-                  <p class="card-text">
-                    A React and Redux-powered app that lets users add places to their bucket list and move them to the
-                    "visited" section once explored. It offers a smooth, interactive experience with efficient state
-                    management.
+                    <h3 class="title-md">Bucket List App</h3>
 
+                    <p class="card-text">
+                      A React and Redux-powered app that lets users add places
+                      to their bucket list and move them to the "visited"
+                      section once explored. It offers a smooth, interactive
+                      experience with efficient state management.
+                    </p>
 
-                  </p>
-
-                  <a href="https://github.com/ayushio18/Bucket-List-App" class="btn btn-primary">View Project</a>
-
+                    <a
+                      href="https://github.com/ayushio18/Bucket-List-App"
+                      class="btn btn-primary"
+                      >View Project</a
+                    >
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li>
+                <div
+                  class="portfolio-card"
+                  style="
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    margin-bottom: 2rem;
+                  "
+                >
+                  <div
+                    class="card-banner img-holder"
+                    style="
+                      width: 100%;
+                      height: 300px;
+                      overflow: hidden;
+                      position: relative;
+                    "
+                  >
+                    <img
+                      src="./assets/images/portfolio-4.jpg"
+                      width="800"
+                      height="540"
+                      loading="lazy"
+                      alt="Website Design for Marketing Agency Startup"
+                      class="img-cover"
+                    />
 
+                    <a
+                      href="https://github.com/ayushio18/Quiz-App"
+                      class="btn-icon"
+                      aria-label="More about Website Design for Marketing Agency Startup"
+                    >
+                      <ion-icon
+                        name="arrow-forward-sharp"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
 
-            
+                  <div class="card-content">
+                    <span class="chip label-md">Web Development</span>
 
-          
+                    <h3 class="title-md">Quiz Taking App</h3>
 
-            <li>
-              <div class="portfolio-card">
+                    <p class="card-text">
+                      A React-based app designed for interactive quiz-taking.
+                      Users can attempt quizzes, view scores, and track their
+                      progress. The app ensures a smooth user experience with
+                      real-time feedback, making it engaging and fun for
+                      learners.
+                    </p>
 
-                <div class="card-banner img-holder" style="--width: 800; --height: 540;">
-                  <img src="./assets/images/portfolio-4.jpg" width="800" height="540" loading="lazy"
-                    alt="Website Design for Marketing Agency Startup" class="img-cover">
-
-                  <a href="https://github.com/ayushio18/Quiz-App" class="btn-icon"
-                    aria-label="More about Website Design for Marketing Agency Startup">
-                    <ion-icon name="arrow-forward-sharp" aria-hidden="true"></ion-icon>
-                  </a>
+                    <a
+                      href="https://github.com/ayushio18/Quiz-App"
+                      class="btn btn-primary"
+                      >View Project</a
+                    >
+                  </div>
                 </div>
+              </li>
 
-                <div class="card-content">
+              <li>
+                <div
+                  class="portfolio-card"
+                  style="
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    margin-bottom: 2rem;
+                  "
+                >
+                  <div
+                    class="card-banner img-holder"
+                    style="
+                      width: 100%;
+                      height: 300px;
+                      overflow: hidden;
+                      position: relative;
+                    "
+                  >
+                    <img
+                      src="./assets/images/portfolio-2.jpg"
+                      width="800"
+                      height="540"
+                      loading="lazy"
+                      alt="Website Design for Marketing Agency Startup"
+                      class="img-cover"
+                    />
 
-                  <span class="chip label-md">Web Development</span>
+                    <a
+                      href="https://github.com/ayushio18/Note-Making-App"
+                      class="btn-icon"
+                      aria-label="More about Website Design for Marketing Agency Startup"
+                    >
+                      <ion-icon
+                        name="arrow-forward-sharp"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
 
-                  <h3 class="title-md">Quiz Taking App</h3>
+                  <div class="card-content">
+                    <span class="chip label-md">Web Development</span>
 
-                  <p class="card-text">
-                    A React-based app designed for interactive quiz-taking. Users can attempt quizzes, view scores, and
-                    track their progress. The app ensures a smooth user experience with real-time feedback, making it
-                    engaging and fun for learners.
-                  </p>
+                    <h3 class="title-md">Note Making App</h3>
 
-                  <a href="https://github.com/ayushio18/Quiz-App" class="btn btn-primary">View Project</a>
+                    <p class="card-text">
+                      A React-based app for efficient note-taking, allowing
+                      users to create, edit, and organize notes. The app uses
+                      Context API for smooth state management and real-time
+                      updates, ensuring a seamless and organized experience.
+                    </p>
 
+                    <a
+                      href="https://github.com/ayushio18/Note-Making-App"
+                      class="btn btn-primary"
+                      >View Project</a
+                    >
+                  </div>
                 </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
 
-              </div>
-            </li>
-
-             
-            <li>
-              <div class="portfolio-card">
-
-                <div class="card-banner img-holder" style="--width: 800; --height: 540;">
-                  <img src="./assets/images/portfolio-2.jpg" width="800" height="540" loading="lazy"
-                    alt="Website Design for Marketing Agency Startup" class="img-cover">
-
-                  <a href="https://github.com/ayushio18/Note-Making-App" class="btn-icon"
-                    aria-label="More about Website Design for Marketing Agency Startup">
-                    <ion-icon name="arrow-forward-sharp" aria-hidden="true"></ion-icon>
-                  </a>
-                </div>
-
-                <div class="card-content">
-
-                  <span class="chip label-md">Web Development</span>
-
-                  <h3 class="title-md">Note Making App</h3>
-
-                  <p class="card-text">
-                    A React-based app for efficient note-taking, allowing users to create, edit, and organize notes. The
-                    app uses Context API for smooth state management and real-time updates, ensuring a seamless and
-                    organized experience.
-
-
-                  </p>
-
-                  <a href="https://github.com/ayushio18/Note-Making-App" class="btn btn-primary">View Project</a>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-    </article>
-  </main>
-
-
-
-
-
-  <!-- 
+    <!-- 
     - #FOOTER
   -->
 
-  <footer class="footer">
-    <div class="container">
+    <footer class="footer">
+      <div class="container">
+        <ul class="social-list">
+          <li>
+            <a href="https://www.facebook.com/510as" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
 
-      <ul class="social-list">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
 
-        <li>
-          <a href="https://www.facebook.com/510as" class="social-link">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
-        </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
 
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </a>
-        </li>
+          <li>
+            <a href="https://www.linkedin.com/in/ayushio/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
 
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-instagram"></ion-icon>
-          </a>
-        </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
-        <li>
-          <a href="https://www.linkedin.com/in/ayushio/" class="social-link">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-pinterest"></ion-icon>
-          </a>
-        </li>
-
-      </ul>
-
-
-    </div>
-  </footer>
-
-
-
-
-  <!-- 
+    <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!-- 
+    <!-- 
     - ionicon
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
