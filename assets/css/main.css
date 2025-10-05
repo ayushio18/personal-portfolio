@@ -24,14 +24,15 @@
   padding-block-start: calc(var(--section-padding) + 60px);
   text-align: center;
   overflow: hidden;
+  padding-bottom: 0;
 }
 
 .hero::after {
   content: "";
   position: absolute;
   top: 0;
-  left: 10%;
-  bottom: 70%;
+  left: 50%;
+  bottom: 110%;
   right: -75%;
   background-color: var(--maximum-yellow-red_a40);
   transform: rotate(-45deg);
@@ -63,6 +64,10 @@
 .hero-banner {
   max-width: max-content;
   margin-inline: auto;
+}
+.hero-banner img {
+  background-blend-mode: multiply;
+  width: 73%;
 }
 
 /*-----------------------------------*\
@@ -119,6 +124,12 @@
   gap: 15px 25px;
 }
 
+.about-banner img {
+  box-shadow: 19px 20px 16px 0px rgba(0, 0, 0, 0.2);
+  width: 75%;
+  height: auto;
+  transform: rotate(-3deg);
+}
 /*-----------------------------------*\
   #SKILLS
 \*-----------------------------------*/
